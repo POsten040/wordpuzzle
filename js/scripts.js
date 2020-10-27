@@ -6,10 +6,15 @@ $(document).submit(function(){
   for (let i = 0; i <= word.length; i++) {
 
     if(word.charAt(i) === "a" || word.charAt(i) === "e" || word.charAt(i) === "i" || word.charAt(i) === "o" || word.charAt(i) === "u"){
-    console.log("-");
+    //console.log("-");
+    $("#output").append("-");
     }
     else {
-      console.log(word.charAt(i));
+      //console.log(word.charAt(i));
+      $("#output").append(word.charAt(i));
+
+    
     }
+    $("#vowel").val("");
   }
 });
