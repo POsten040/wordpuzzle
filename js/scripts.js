@@ -12,8 +12,6 @@ $(document).submit(function(){
     else {
       //console.log(word.charAt(i));
       $("#output").append(word.charAt(i));
-
-    
     }
     $("#vowel").val("");
   }
